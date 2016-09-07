@@ -1,0 +1,17 @@
+{
+  "name": "photo_dump",
+  "description": "An app that responds to IFTTT Maker requests to deep store photos from iOS.",
+  "version": "0.0.1",
+  "webpage": "http://roguenode.com",
+  "metadata_url": "https://s3.amazonaws.com/components.fulcrum.tech/specs/photo_dump.json",
+  "image_url": "jakewilkins/photo_dump:0.0.1",
+  "discovery_url": "",
+  "dependencies": ["postgres"],
+  "requires": ["PHOTOS_URL"],
+  "configurables": [
+    {"name": "PHOTOS_URL", "export_as": "hostname"}],
+  "accompaniments": [{"type": "ecto_migrator", "migration_repo": "https://github.com/jakewilkins/photo_dump"}],
+  "start_command": "",
+  "provides": ["http"],
+  "publishes": ["PORT:4000"]
+}
