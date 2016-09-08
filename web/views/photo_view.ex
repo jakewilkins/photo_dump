@@ -13,6 +13,7 @@ defmodule PhotoDump.PhotoView do
     %{id: photo.id,
       uuid: photo.uuid,
       ifttt_photo_url: photo.ifttt_photo_url,
+      album_name: photo.album_name,
       taken_at: photo.taken_at}
   end
 end

@@ -19,7 +19,7 @@ defmodule PhotoDump.Mixfile do
   def application do
     [mod: {PhotoDump, []},
      applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :postgrex]]
+                    :phoenix_ecto, :postgrex, :timex, :timex_ecto]]
   end
 
   # Specifies which paths to compile per environment.
