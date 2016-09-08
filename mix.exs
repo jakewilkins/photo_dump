@@ -39,6 +39,8 @@ defmodule PhotoDump.Mixfile do
      {:gettext, "~> 0.11"},
      {:exrm, "~> 0.19"},
      {:edip, "~> 0.4"},
+     {:timex, "~> 3.0"},
+     {:timex_ecto, "~> 3.0"},
      {:cowboy, "~> 1.0"}]
   end
 

@@ -11,8 +11,8 @@ defmodule PhotoDump.PhotoView do
 
   def render("photo.json", %{photo: photo}) do
     %{id: photo.id,
-      name: photo.name,
-      lat_long: photo.lat_long,
+      uuid: photo.uuid,
+      ifttt_photo_url: photo.ifttt_photo_url,
       taken_at: photo.taken_at}
   end
 end

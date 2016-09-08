@@ -9,6 +9,7 @@
   "dependencies": ["postgres"],
   "requires": ["PHOTOS_URL"],
   "configurables": [
+    {"name": "RELX_REPLACE_OS_VARS", "default": "true"},
     {"name": "PHOTOS_URL", "export_as": "hostname"}],
   "accompaniments": [{"type": "ecto_migrator", "migration_repo": "https://github.com/jakewilkins/photo_dump"}],
   "start_command": "",
